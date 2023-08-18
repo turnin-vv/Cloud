@@ -1,0 +1,1 @@
+ansible-playbook playbook-deploy-host.yml -i invetory/prod/prod.ini -D -u root
