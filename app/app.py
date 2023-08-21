@@ -10,8 +10,8 @@ def get_hostname():
 
 @app.route('/author', methods=['GET'])
 def get_author():
-
-    author = os.getenv('AUTHOR', 'turnin-vv')
+    os.environ['AUTHOR'] = 'turnin-vv'
+    author = os.getenv('AUTHOR', 'Unknown')
     return jsonify({'author': author})
 
 @app.route('/id', methods=['GET'])
