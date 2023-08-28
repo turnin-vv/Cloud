@@ -1,5 +1,5 @@
 image:
   repository: 192.168.100.16:5000/my-app
-  tag: latest
+  tag: "1.0"
 replicaCount: 3
-author: turnin
+author: turnin-vv

@@ -1,9 +1,8 @@
-FROM python:3.9-slim-buster
+FROM python:3.9-alpine3.17
 
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
+RUN apk update && \
+    apk upgrade && \
+    apk add --no-cache build-base
 
 WORKDIR /app
 

@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: cloud-app-container
-          image: 192.168.100.16:5000/my-app:latest
+          image: 192.168.100.16:5000/my-app:1.0
           ports:
             - containerPort: 8000
           env:
